@@ -10,7 +10,7 @@ console.log(footer)
 const copyright= document.createElement('p')
 console .log (copyright)
 
-copyright.innerHTML= `Betelehem &copy ${thisyear}`;
+copyright.innerHTML= `Betelehem &copy; ${thisyear}`;
 
 footer.appendChild(copyright)
 
@@ -22,7 +22,7 @@ const skills= [
 ]
 
 const skillsSection=document.getElementById("skills")
-const skillsList=document.querySelector('ul')
+const skillsList=skillsSection.querySelector('ul')
 
 console.log(skills)
 
@@ -32,6 +32,6 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML=skills[i];
     console.log(skill.innerHTML)
 
-    skillsSection.appendChild(skill)
+    skillsList.appendChild(skill)
 }
 
