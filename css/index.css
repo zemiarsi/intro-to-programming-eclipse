@@ -1,0 +1,130 @@
+
+body {
+  background-color: rgb(241, 216, 238);
+  color: black;
+  font-family: "open sans", sans-serif;
+  padding: 20px;
+  margin: 50px;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.mypic {
+  width: 25%;
+}
+h2 {
+  color: black;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.Experience li {
+  background-color: lightblue;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+#skills ul li {
+  list-style-type: none;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: blue;
+  border: blue 2px solid;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.connect-list li {
+  display: inline;
+}
+
+.label-form {
+  color: black;
+}
+
+.field {
+  display: inline-block;
+}
+
+.input-form {
+  color: black;
+  border: black 2px solid;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: 0;
+  padding: 10px;
+}
+
+.textarea {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  border: black 3px solid;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.Messages li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.removeButton {
+  background-color: red;
+  padding: 5px;
+}
+
+.editButton {
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+.footer {
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+
+
+/* $desktop: 1200px;
+$laptop: 1024;
+$tablet:768;
+$phone: 480; */
+
+
+/* resize everything based on font-size */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 60%;
+  }
+}

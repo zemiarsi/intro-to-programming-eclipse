@@ -2,64 +2,92 @@
 <html>
   <head>
     <title>MY Portfoli</title>
-    <meta name="description" content="My Portfoli">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="My Portfoli" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 >Betelehem Gebremicheal</h1>
+  <body text="blue">
+    <h1>Betelehem Gebremicheal</h1>
+    <img src="image/mypic.jpg" class="mypic" />
     <section>
-    <h1>About</h1>
-    <p>I am a Civil/ structural Engineering who focuses on design and construction </p>
-  </section>
-  <section>
-  <h1>Experience</h1>
-    <ul>
-      <li>offcie Engineering at J T Hicks Associates</li>
-      <li>office Engineering at T.N.M International consulting company</li>
-      <li>quantity Survey / site supervsion at Wide company </li>
-    </ul>
-  </section>
-  <section id="skills">
-    <h2>skills</h2>
-  <ul></ul>
-</section>
-  <section>
-    <h1>Connect</h1>
-    <ul>
-   <li><a target="_blank" href="mailto: arsemye21@gmail.com"> <img class="img-size" src="image/gmail.logo.png" alt="Gmail"></a></li>
-   <li><a href="https://www.linkedin.com/in/betelehem-gebremicheal-265656157/"> <img class="img-size" src="image/linkedIn.logo.png" alt="linkedin"></a></li>
-   <li><a href="https://twitter.com/betelehem126557"><img class="img-size" src="image/twitter.logo.png" alt="twitter"></a></li>
-    <li><a href="https://github.com/zemiarsi"> <img class="img-size" src="image/github.logo.png" alt="github"></a></li>
-  </ul>
-  </section>
+      <h1>About</h1>
+      <p>
+        I am a Civil/ structural Engineering who focuses on design and
+        construction
+      </p>
+    </section>
+    <section>
+      <h1>Experience</h1>
 
+      <ul class="Experience">
+        <li>offcie Engineering at J T Hicks Associates</li>
+        <li>office Engineering at T.N.M International consulting company</li>
+        <li>quantity Survey / site supervsion at Wide company</li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>skills</h2>
 
-
-  <section>
-    <h2>Leave a Message</h2>
-    <form name="leave_message">
-      <label for="name">Name</label><br>
-      <input type="text" name="name" required><br>
-      <label for="email">Email Address</label><br>
-      <input type="email" name="email" required><br>
-      <label for="message">Message</label><br>
-      <textarea name="message" required></textarea><br>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-   <section id="messages"> 
-     <h2>Messages</h2>
-     <ul>
-
-     </ul>
+      <ul></ul>
+    </section>
+    <section>
+      <h1>Connect</h1>
+      <ul class="connect-list">
+        <li>
+          <a target="_blank" href="mailto: arsemye21@gmail.com">
+            <img class="img-size" src="image/gmail.logo.png" alt="Gmail"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/betelehem-gebremicheal-265656157/"
+          >
+            <img class="img-size" src="image/linkedIn.logo.png" alt="linkedin"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/betelehem126557"
+            ><img class="img-size" src="image/twitter.logo.png" alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/zemiarsi">
+            <img class="img-size" src="image/github.logo.png" alt="github"
+          /></a>
+        </li>
+      </ul>
     </section>
 
+    <section>
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <div class="field">
+          <label for="name" class="label-form">Name</label><br />
+          <input type="text" name="name" class="input-form" required />
+        </div>
 
+        <div class="field">
+          <label for="email" class="label-form">Email Address</label><br />
+          <input type="email" name="email" class="input-form" required />
+        </div>
+        <br />
+        <label for="message" class="label-form">Message</label><br />
+        <textarea name="message" class="textarea" required></textarea><br />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
 
-  <footer></footer>
-  <script src="js/index.js">
-  </script>
-  
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul class="Messages"></ul>
+    </section>
+
+    <footer class="footer"></footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

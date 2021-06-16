@@ -10,16 +10,22 @@ const footer= document.querySelector('footer')
 const copyright= document.createElement('p')
 console .log (copyright)
 
-copyright.innerHTML= `Betelehem &copy; ${thisyear}`;
+copyright.innerHTML= `&copy Betelehem  ${thisyear}`;
 
 footer.appendChild(copyright)
 
+
 const skills= [
+
+    "JavaScript",
+    "HTML",
+    "CSS",
     "structural analysis",
     "problem-solving",
     "Attention to detail",
     " Teamwork"
 ]
+
 
 const skillsSection=document.getElementById("skills")
 const skillsList=skillsSection.querySelector('ul')
@@ -61,11 +67,15 @@ messageForm.addEventListener('submit', (e)=> {
 
     const removeButton=document.createElement("button")
     removeButton.innerHTML = "remove";
-    removeButton.type = "button"
+    removeButton.type = "button" 
+     // css part
+    removeButton.className="removeButton"
     //streach number 2
     const editButton = document.createElement('button')
     editButton.innerHTML = "edit";
+    // css part
     editButton.type = "button"
+    editButton.className = "editButton"
 
 
     newMessage.appendChild(removeButton)
