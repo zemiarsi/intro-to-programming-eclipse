@@ -5,48 +5,81 @@ body {
   font-family: "open sans", sans-serif;
   padding: 20px;
   margin: 50px;
+  font-size: x-large;
 }
+
+
+
+.links{
+display: inline;
+margin-left:10px;
+font-size: large;
+float: right;
+text-decoration: none;
+}
+
 
 h1 {
-  color: black;
+  color: darkviolet;
   font-size: 3rem;
   font-weight: normal;
 }
 
+
 .mypic {
-  width: 25%;
+   width: 400px;
+  clip-path: circle();
 }
+
+
+a{
+  color:darkmagenta
+}
+
 h2 {
-  color: black;
+  color: darkviolet;
   font-size: 3rem;
   font-weight: normal;
+}
+.Experience {
+  display:flex;
+  flex-direction:column;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .Experience li {
-  background-color: lightblue;
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  
+  margin: 5px;
+  padding: 5px;
+  background-color: cornsilk;
+  width: fit-content;
 }
 
-#skills ul li {
+
+#skills ul {
+  display:flex;
+  flex-direction:row;
   list-style-type: none;
-  margin: 5px 0;
-  font-size: 1rem;
-  color: blue;
-  border: blue 2px solid;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 5px 10px;
+  padding-left: 0;
 }
+
+#skills li {
+  margin: 5px;
+  padding: 5px;
+  background-color: cornsilk;
+  width: fit-content;
+}
+
+
 
 .connect-list li {
   display: inline;
+  float: right;
 }
 
 .label-form {
   color: black;
+  font-size: x-large;
 }
 
 .field {
@@ -58,6 +91,7 @@ h2 {
   border: black 2px solid;
   font-size: 1em;
   padding: 10px;
+  
 }
 
 .btn {
@@ -95,6 +129,12 @@ h2 {
   background-color: lightgrey;
   padding: 5px;
 }
+
+
+.connect-section {
+  text-align: right;
+}
+
 
 
 

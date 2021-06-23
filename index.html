@@ -5,23 +5,39 @@
     <meta name="description" content="My Portfoli" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <title>Rounded image</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body text="blue">
+  <body>
+  <section name="myname">
+
+    <header>
+      <ul>
+      <li class="links"><a class="links" href="#message">Connect</a></li>
+      <li class="links"><a class="links" href="#experience">Experience</a></li>
+      <li class="links"><a class="links" href="#skills">Skills</a></li>
+      <li class="links"><a class="links" href="#about">About</a></li>
+    </ul>
+    </header>
+
+
+
+
     <h1>Betelehem Gebremicheal</h1>
+  </section>
     <img src="image/mypic.jpg" class="mypic" />
-    <section>
+    <section id="about">
       <h1>About</h1>
       <p>
         I am a Civil/ structural Engineering who focuses on design and
         construction
       </p>
     </section>
-    <section>
+    <section id="experience">
       <h1>Experience</h1>
 
       <ul class="Experience">
@@ -35,7 +51,34 @@
 
       <ul></ul>
     </section>
-    <section>
+    <section >
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <div class="field">
+          <label for="name" class="label-form">Name</label><br />
+          <input type="text" name="name" class="input-form" required />
+        </div>
+
+        <div class="field">
+          <label for="email" class="label-form">Email Address</label><br />
+          <input type="email" name="email" class="input-form" required />
+        </div>
+        <br />
+        <label for="message" class="label-form">Message</label><br />
+        <textarea name="message" class="textarea" required></textarea><br />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul class="Messages"></ul>
+    </section>
+
+    
+    
+      <footer class="footer"><section class="connect-section">
       <h1>Connect</h1>
       <ul class="connect-list">
         <li>
@@ -62,32 +105,7 @@
         </li>
       </ul>
     </section>
-
-    <section>
-      <h2>Leave a Message</h2>
-      <form name="leave_message">
-        <div class="field">
-          <label for="name" class="label-form">Name</label><br />
-          <input type="text" name="name" class="input-form" required />
-        </div>
-
-        <div class="field">
-          <label for="email" class="label-form">Email Address</label><br />
-          <input type="email" name="email" class="input-form" required />
-        </div>
-        <br />
-        <label for="message" class="label-form">Message</label><br />
-        <textarea name="message" class="textarea" required></textarea><br />
-        <button type="submit" class="btn">Submit</button>
-      </form>
-    </section>
-
-    <section id="messages">
-      <h2>Messages</h2>
-      <ul class="Messages"></ul>
-    </section>
-
-    <footer class="footer"></footer>
+</footer>
     <script src="js/index.js"></script>
   </body>
 </html>
