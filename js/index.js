@@ -61,7 +61,7 @@ messageForm.addEventListener('submit', (e)=> {
     messageForm.reset()
 
    
-    const newMessage = document.querySelector('li')
+    const newMessage = document.createElement('li')
     newMessage.innerHTML = `<a href="mailto:${Email}">${Name}</a> wrote: <span>${Message}</span>`
     console.log(newMessage)
 

@@ -1,44 +1,95 @@
-
 body {
   background-color: rgb(241, 216, 238);
   color: black;
   font-family: "open sans", sans-serif;
   padding: 20px;
   margin: 50px;
+  font-size: x-large;
+}
+
+.links {
+  margin-left: 10px;
+  font-size: large;
+}
+
+.links a {
+  text-decoration: none;
+}
+.menu-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
 }
 
 h1 {
-  color: black;
+  color: darkviolet;
   font-size: 3rem;
   font-weight: normal;
+}
+
+h2 {
+  color: darkviolet;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.myname {
+  display: flex;
+  align-items: center;
+}
+.myname h2 {
+  margin-left: 15px;
 }
 
 .mypic {
-  width: 25%;
+  width: 200px;
+  clip-path: circle();
 }
+
+a {
+  color: darkmagenta;
+}
+
 h2 {
-  color: black;
+  color: darkviolet;
   font-size: 3rem;
   font-weight: normal;
 }
-
-.Experience li {
-  background-color: lightblue;
+.Experience {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  
+  padding-left: 0;
 }
 
-#skills ul li {
+.Experience li {
+  margin: 5px;
+  padding: 5px;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leave_message {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: cornsilk;
+  width: fit-content;
+}
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
-  margin: 5px 0;
-  font-size: 1rem;
-  color: blue;
-  border: blue 2px solid;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 5px 10px;
+  padding-left: 0;
+}
+
+#skills li {
+  margin: 5px;
+  padding: 5px;
+  background-color: cornsilk;
+  width: fit-content;
 }
 
 .connect-list li {
@@ -47,6 +98,7 @@ h2 {
 
 .label-form {
   color: black;
+  font-size: x-large;
 }
 
 .field {
@@ -96,13 +148,18 @@ h2 {
   padding: 5px;
 }
 
-
+.connect-section {
+  justify-content: flex-end;
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  bottom: -50px;
+}
 
 /* $desktop: 1200px;
 $laptop: 1024;
 $tablet:768;
 $phone: 480; */
-
 
 /* resize everything based on font-size */
 @media screen and (min-width: 1200px) {

@@ -5,29 +5,63 @@
     <meta name="description" content="My Portfoli" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <title>Rounded image</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body text="blue">
-    <h1>Betelehem Gebremicheal</h1>
-    <img src="image/mypic.jpg" class="mypic" />
+  <body>
     <section>
+      <!-- lesson-4.5 -->
+      <header>
+        <ul class="menu-nav">
+          <li class="links"><a href="#home">Home</a></li>
+          <li class="links"><a href="#about">About</a></li>
+          <li class="links"><a href="#experience">Experience</a></li>
+          <li class="links"><a href="#skills">Skills</a></li>
+          <li class="links"><a href="#connect">Connect</a></li>
+        </ul>
+      </header>
+    </section>
+
+    <div class="myname">
+      <img src="image/mypic.jpg" class="mypic" />
+      <h2>Betelehem Gebremicheal</h2>
+    </div>
+
+    <section id="about">
       <h1>About</h1>
       <p>
-        I am a Civil/ structural Engineering who focuses on design and
-        construction
+        I am a Civil/ structural Engineering who focuses on design and construction. Able to read blueprints and creates drawings and design specifications. Experience in site plan preparation and coordination between contractors.
+performing administrative tasks and keeping detailed record. Worked with architects and consulting engineers to negotiate change of orders and modifications, utilized manuals for system verification and establishments of baseline national road database on web-based application system
+
+Additionally skilled in AutoCAD, SAP ,Arc Map,Global Mapper and SQLite engineering software.Ability to design and implement architectural models.
+
+My career is driven by my belief that doing things with love and my clients and project end users first, to ensure that my design is practical, usable and economically visible.
       </p>
     </section>
-    <section>
+    <section id="experience">
       <h1>Experience</h1>
 
       <ul class="Experience">
-        <li>offcie Engineering at J T Hicks Associates</li>
-        <li>office Engineering at T.N.M International consulting company</li>
-        <li>quantity Survey / site supervsion at Wide company</li>
+        <li>
+          <div>offcie Engineering at J T Hicks Associates</div>
+          <div>Apr 2019 - present</div>
+        </li>
+
+        <li>
+          <div>
+            office Engineering at T.N.M International consulting company
+          </div>
+          <div>Sep 2015 - Aug 2016</div>
+        </li>
+
+        <li>
+          <div>quantity Survey / site supervsion at Wide company</div>
+          <div>Aug 2014 - Feb 2015</div>
+        </li>
       </ul>
     </section>
     <section id="skills">
@@ -36,50 +70,24 @@
       <ul></ul>
     </section>
     <section>
-      <h1>Connect</h1>
-      <ul class="connect-list">
-        <li>
-          <a target="_blank" href="mailto: arsemye21@gmail.com">
-            <img class="img-size" src="image/gmail.logo.png" alt="Gmail"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/betelehem-gebremicheal-265656157/"
-          >
-            <img class="img-size" src="image/linkedIn.logo.png" alt="linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/betelehem126557"
-            ><img class="img-size" src="image/twitter.logo.png" alt="twitter"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/zemiarsi">
-            <img class="img-size" src="image/github.logo.png" alt="github"
-          /></a>
-        </li>
-      </ul>
-    </section>
-
-    <section>
       <h2>Leave a Message</h2>
-      <form name="leave_message">
-        <div class="field">
-          <label for="name" class="label-form">Name</label><br />
-          <input type="text" name="name" class="input-form" required />
-        </div>
+      <div class="leave_message">
+        <form name="leave_message">
+          <div class="field">
+            <label for="name" class="label-form">Name</label><br />
+            <input type="text" name="name" class="input-form" required />
+          </div>
 
-        <div class="field">
-          <label for="email" class="label-form">Email Address</label><br />
-          <input type="email" name="email" class="input-form" required />
-        </div>
-        <br />
-        <label for="message" class="label-form">Message</label><br />
-        <textarea name="message" class="textarea" required></textarea><br />
-        <button type="submit" class="btn">Submit</button>
-      </form>
+          <div class="field">
+            <label for="email" class="label-form">Email Address</label><br />
+            <input type="email" name="email" class="input-form" required />
+          </div>
+          <br />
+          <label for="message" class="label-form">Message</label><br />
+          <textarea name="message" class="textarea" required></textarea><br />
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
     </section>
 
     <section id="messages">
@@ -87,7 +95,40 @@
       <ul class="Messages"></ul>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <section class="connect-section">
+        <section id="connect">
+        <!-- <h1>Connect</h1> -->
+        <ul class="connect-list">
+        </section>
+          <li>
+            <a target="_blank" href="mailto: arsemye21@gmail.com">
+              <img class="img-size" src="image/gmail.logo.png" alt="Gmail"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/betelehem-gebremicheal-265656157/"
+            >
+              <img
+                class="img-size"
+                src="image/linkedIn.logo.png"
+                alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/betelehem126557"
+              ><img class="img-size" src="image/twitter.logo.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/zemiarsi">
+              <img class="img-size" src="image/github.logo.png" alt="github"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
