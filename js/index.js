@@ -125,3 +125,48 @@ if (e.target.tagName==="BUTTON") {
     
 
 })
+
+
+
+
+
+
+
+
+
+//lesson-6-1 code start here
+
+const githubRequest = new XMLHttpRequest();
+
+//Form the request details
+githubRequest.open("GET", `https://api.github.com/users/zemiarsi/repos`);
+
+// send the request
+githubRequest.send();
+
+//when we get data, read it
+
+githubRequest.onload = function () {
+    let repositories=JSON.parse(this.response);
+    console.log(repositories);
+
+    //Get project section
+    const projectSection = document.getElementById('projects')
+
+    //Get ul list inside of section
+    const projectList = projectSection.querySelector('ul')
+
+    console.log(projectList)
+
+    //Loop over repositories
+    repositories.forEach(repo => {
+            //Create new li element
+            const project = document.createElement('li')
+
+            //set innerText to repo name
+            project.innerText = repo.name
+
+           //Add to list
+            projectList.appendChild(project)
+        })
+    }
