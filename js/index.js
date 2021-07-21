@@ -5,14 +5,14 @@ const thisyear = today.getFullYear()
 
 const footer= document.querySelector('footer')
 
-
+const connectSection = footer.querySelector('.connect-section')
 
 const copyright= document.createElement('p')
-console .log (copyright)
+console.log(copyright)
 
 copyright.innerHTML= `&copy Betelehem  ${thisyear}`;
 
-footer.appendChild(copyright)
+connectSection.appendChild(copyright)
 
 
 const skills= [
@@ -35,8 +35,8 @@ console.log(skills)
 for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement('li');
 
-    skill.innerHTML=skills[i];
-    console.log(skill.innerHTML)
+    skill.textContent=skills[i];
+    console.log(skill.textContent)
 
     skillsList.appendChild(skill)
 }

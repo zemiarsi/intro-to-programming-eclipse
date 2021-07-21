@@ -3,10 +3,11 @@ html {
 }
 
 body {
-  background: whitesmoke;
+  background: #c2dde6;
   color: dark;
   font-family: "open sans", sans-serif;
   font-size: 20px;
+  margin: 0;
 } 
 
 /* $desktop: 1200px;
@@ -44,7 +45,11 @@ $phone: 480;
   }
 }
 
-
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 0.1fr);
+}
 
 .img-size{
   width: 1em;
@@ -57,7 +62,7 @@ $phone: 480;
   font-size: large;
 } 
 
- .links a {
+ .menu-nav a {
   text-decoration: none;
 }
 .menu-nav {
@@ -67,6 +72,11 @@ $phone: 480;
   padding-inline-start: 0;
   width: 100%;
   align-items: center;
+  background-color: cadetblue;
+  margin: 0;
+  position:sticky;
+  top:0;
+  z-index: 90;
 } 
 
 .menu-nav li:first-child{
@@ -86,7 +96,7 @@ h2 {
   vertical-align: middle;
 } 
 #about span{
-  color: blue;
+  color: darkmagenta;
 }
 
 a {
@@ -103,9 +113,9 @@ a {
 .Experience li {
   margin: 5px;
   padding: 5px;
-  background-color: lightgrey;
+  background-color: #bccbde;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between 
 }
 
 .leave_message {
@@ -118,18 +128,26 @@ a {
 
 #skills ul {
   display: grid;
-  grid-template-columns: repeat(7,0.5fr); 
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(7,0.1fr); 
   list-style-type: none;
   padding-left: 0;
-  grid-gap: 10px;
+  grid-gap: 5px;
 
 }
 
 #skills li {
   font-size: 1.8rem;
-  background-color: lightgray;
+  background-color:#bccbde;
 }
+
+
+
+#skills li:nth-child(1), #skills li:nth-child(2), 
+#skills li:nth-child(3), #skills li:last-child{
+  padding-top: 1rem;
+}
+
+
 
 .connect-list li {
   display: inline;
@@ -188,22 +206,21 @@ a {
 }
 
 .connect-section {
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   display: flex;
   list-style-type: none;
-  position: relative;
-  bottom: -50px;
+
 }
 
 @media screen and (min-width: 768px) {
   .menu-nav {
     flex-direction: row;
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items:flex-end;
   list-style-type: none;
   justify-content: space-between; 
-  margin-left: 50%;
   
   } 
   .manu-nav li {
@@ -212,9 +229,44 @@ a {
   text-align: center;
   font-size: 30px;
   }
+
+  #skills ul{
+    grid-template-columns: repeat(7,1fr); 
+  }
+
+  #skills li:first-child{
+  padding:0;
+  padding-left: 3.6rem;
+}
+
+#skills li:nth-child(2), #skills li:nth-child(3){
+  padding-top: 0;
+  padding-left: 5.5rem;
+}
+
+#skills li:nth-child(4),#skills li:nth-child(5), 
+#skills li:nth-child(6){
+  padding-left: 1rem;
+}
+
+#skills li:last-child{
+  padding-top: 0;
+  padding-left: 3rem;
+}
     
   }
 
+  @media screen and (min-width: 900px) {
+    .menu-nav{
+      align-items: center;
+      justify-content: space-around;
+    }
+    html{
+      padding-right: 5rem;
+      padding-left: 5rem;
+      margin-bottom: 5px;
+    }
+  }
 
 
 
