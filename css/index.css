@@ -1,19 +1,49 @@
-
-.background-muted-video{
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
+html {
+  font-size: 100%;
 }
 
 body {
-  background: grey;
-  color: cornsilk;
+  background: whitesmoke;
+  color: dark;
   font-family: "open sans", sans-serif;
-  padding: 20px;
-  margin: 50px;
-  font-size: x-large;
+  font-size: 20px;
 } 
+
+/* $desktop: 1200px;
+$laptop: 1024;
+$tablet:768;
+$phone: 480; 
+
+/* resize everything based on font-size */
+@media screen and (min-width: 1200px) {
+  html { 
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 60%;
+  }
+  #Skills ul{
+    display: grid;
+    grid-template-columns: repeat(7,0.5fr); 
+
+  }
+}
+
 
 
 .img-size{
@@ -21,8 +51,9 @@ body {
   height: 1em;  
 }
 
+
   .links {
-  margin-left: 10px;
+  color: darkmagenta; 
   font-size: large;
 } 
 
@@ -31,16 +62,16 @@ body {
 }
 .menu-nav {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: flex-end;
+  padding-inline-start: 0;
+  width: 100%;
+  align-items: center;
 } 
 
+.menu-nav li:first-child{
+  color:blue;
 
-
-h1 {
-  color: darkviolet;
-  font-size: 3rem;
-  font-weight: normal;
 }
 
 h2 {
@@ -49,31 +80,22 @@ h2 {
   font-weight: normal; 
 }
 
-/* .myname {
-  display: flex;
-  align-items: center;
-}
-.myname h2 {
-  margin-left: 15px;
-} */
-
  .mypic {
   width: 200px;
   clip-path: circle();
+  vertical-align: middle;
 } 
+#about span{
+  color: blue;
+}
 
 a {
   color: darkmagenta;
 } 
 
-h2 {
-  color: darkviolet;
-  font-size: 3rem;
-  font-weight: normal;
-}
 .Experience {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   list-style-type: none;
   padding-left: 0;
 }
@@ -81,31 +103,32 @@ h2 {
 .Experience li {
   margin: 5px;
   padding: 5px;
-  background-color: darkslategrey;
+  background-color: lightgrey;
   display: flex;
   justify-content: space-between; 
 }
 
 .leave_message {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 5px;
   background-color: cornsilk;
   width: fit-content;
 }
 
 #skills ul {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(7,0.5fr); 
+  grid-template-rows: 1fr;
   list-style-type: none;
   padding-left: 0;
+  grid-gap: 10px;
+
 }
 
 #skills li {
-  margin: 5px;
-  padding: 5px;
-  background-color: darkslategray;
-  width: fit-content;
+  font-size: 1.8rem;
+  background-color: lightgray;
 }
 
 .connect-list li {
@@ -172,35 +195,26 @@ h2 {
   bottom: -50px;
 }
 
-/* $desktop: 1200px;
-$laptop: 1024;
-$tablet:768;
-$phone: 480; */
-
-/* resize everything based on font-size */
-@media screen and (min-width: 1200px) {
-  html { 
-    font-size: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 90%;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  html {
-    font-size: 70%;
+  .menu-nav {
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    align-items:flex-end;
+  list-style-type: none;
+  justify-content: space-between; 
+  margin-left: 50%;
+  
+  } 
+  .manu-nav li {
+    margin-right: 10px;
+    width: 100px;
+  text-align: center;
+  font-size: 30px;
   }
-}
+    
+  }
 
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 60%;
-  }
-}
 
 
 

@@ -134,39 +134,59 @@ if (e.target.tagName==="BUTTON") {
 
 
 
-//lesson-6-1 code start here
 
-const githubRequest = new XMLHttpRequest();
+
+
+
+// lesson-6-1 code start here
+
+// const githubRequest = new XMLHttpRequest();
 
 //Form the request details
-githubRequest.open("GET", `https://api.github.com/users/zemiarsi/repos`);
+// githubRequest.open("GET", `https://api.github.com/users/zemiarsi/repos`);
 
 // send the request
-githubRequest.send();
+// githubRequest.send();
 
 //when we get data, read it
 
-githubRequest.onload = function () {
-    let repositories=JSON.parse(this.response);
-    console.log(repositories);
+// function handleRepoData(repositories) {
+//     // let repositories=JSON.parse(this.response);
+    // console.log(repositories);
 
     //Get project section
-    const projectSection = document.getElementById('projects')
+    // const projectSection = document.getElementById('projects')
 
-    //Get ul list inside of section
-    const projectList = projectSection.querySelector('ul')
+    // //Get ul list inside of section
+    // const projectList = projectSection.querySelector('ul')
 
-    console.log(projectList)
+    // console.log(projectList)
 
-    //Loop over repositories
-    repositories.forEach(repo => {
-            //Create new li element
-            const project = document.createElement('li')
+    // //Loop over repositories
+    // repositories.forEach(repo => {
+    //         //Create new li element
+    //         const project = document.createElement('li')
+           
+            
+    //         //set innerText to repo name
+    //         project.innerText = `${repo.name} ${repo.description}`
 
-            //set innerText to repo name
-            project.innerText = repo.name
+    //        //Add to list
+    //         projectList.appendChild(project)
+    //     })
+    
 
-           //Add to list
-            projectList.appendChild(project)
-        })
-    }
+
+//lesson-6-2 code start here
+fetch(`https://api.github.com/users/zemiarsi/repos`)
+.then(response=>response.json())
+.then(data=>repo(data))
+function repo(data) {
+    let projectSection=document.getElementById("projects");
+    let projectList=projectSection.querySelector('ul')
+    for(let i=0; i<data.length; i++){
+        let project = document.createElement('li');
+        project.innerHTML=`<a href=${`${data[i].clone_url}`}>${data[i].name}</a>`
+        projectList.appendChild(project)
+}}
+
