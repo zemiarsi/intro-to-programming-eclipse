@@ -30,12 +30,15 @@ const skills= [
 const skillsSection=document.getElementById("skills")
 const skillsList=skillsSection.querySelector('ul')
 
+
 console.log(skills)
 
 for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement('li');
+    const textWrapper = document.createElement('p')
 
-    skill.textContent=skills[i];
+    textWrapper.textContent = skills[i]
+    skill.appendChild(textWrapper)
     console.log(skill.textContent)
 
     skillsList.appendChild(skill)
@@ -127,56 +130,6 @@ if (e.target.tagName==="BUTTON") {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-// lesson-6-1 code start here
-
-// const githubRequest = new XMLHttpRequest();
-
-//Form the request details
-// githubRequest.open("GET", `https://api.github.com/users/zemiarsi/repos`);
-
-// send the request
-// githubRequest.send();
-
-//when we get data, read it
-
-// function handleRepoData(repositories) {
-//     // let repositories=JSON.parse(this.response);
-    // console.log(repositories);
-
-    //Get project section
-    // const projectSection = document.getElementById('projects')
-
-    // //Get ul list inside of section
-    // const projectList = projectSection.querySelector('ul')
-
-    // console.log(projectList)
-
-    // //Loop over repositories
-    // repositories.forEach(repo => {
-    //         //Create new li element
-    //         const project = document.createElement('li')
-           
-            
-    //         //set innerText to repo name
-    //         project.innerText = `${repo.name} ${repo.description}`
-
-    //        //Add to list
-    //         projectList.appendChild(project)
-    //     })
-    
-
-
 //lesson-6-2 code start here
 fetch(`https://api.github.com/users/zemiarsi/repos`)
 .then(response=>response.json())
@@ -186,7 +139,9 @@ function repo(data) {
     let projectList=projectSection.querySelector('ul')
     for(let i=0; i<data.length; i++){
         let project = document.createElement('li');
-        project.innerHTML=`<a href=${`${data[i].clone_url}`}>${data[i].name}</a>`
+        project.innerHTML=`<a href="${data[i].clone_url}">${data[i].name}</a><br>
+        Description: ${data[i].description}
+        `
         projectList.appendChild(project)
 }}
 

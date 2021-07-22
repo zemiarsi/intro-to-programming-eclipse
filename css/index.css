@@ -91,7 +91,7 @@ h2 {
 }
 
  .mypic {
-  width: 200px;
+  width: 100px;
   clip-path: circle();
   vertical-align: middle;
 } 
@@ -128,26 +128,32 @@ a {
 
 #skills ul {
   display: grid;
-  grid-template-columns: repeat(7,0.1fr); 
+  grid-template-columns: auto; 
   list-style-type: none;
   padding-left: 0;
   grid-gap: 5px;
-
+  align-items: center;
 }
 
-#skills li {
+#skills ul li{
+  display: flex;
+  justify-content: center;
   font-size: 1.8rem;
   background-color:#bccbde;
 }
 
-
-
-#skills li:nth-child(1), #skills li:nth-child(2), 
-#skills li:nth-child(3), #skills li:last-child{
-  padding-top: 1rem;
+.projects li{
+  display: inline-block;
+  border: 5px solid cornsilk;
+  list-style-type: none;
+  margin-right: 10rem;
+  margin-bottom: 2.5rem;
+  padding: 5px;
 }
 
-
+.projects li a{
+  text-decoration: none;
+}
 
 .connect-list li {
   display: inline;
@@ -223,6 +229,10 @@ a {
   justify-content: space-between; 
   
   } 
+  .mypic{
+    width: 200px;
+  }
+
   .manu-nav li {
     margin-right: 10px;
     width: 100px;
@@ -234,25 +244,6 @@ a {
     grid-template-columns: repeat(7,1fr); 
   }
 
-  #skills li:first-child{
-  padding:0;
-  padding-left: 3.6rem;
-}
-
-#skills li:nth-child(2), #skills li:nth-child(3){
-  padding-top: 0;
-  padding-left: 5.5rem;
-}
-
-#skills li:nth-child(4),#skills li:nth-child(5), 
-#skills li:nth-child(6){
-  padding-left: 1rem;
-}
-
-#skills li:last-child{
-  padding-top: 0;
-  padding-left: 3rem;
-}
     
   }
 
